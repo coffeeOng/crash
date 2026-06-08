@@ -32,6 +32,12 @@ WATCHLISTS: dict[str, list[str]] = {
         "MSFT", "GOOGL", "AMZN", "META", "PLTR",
         "CRM", "NOW", "ADBE", "ORCL", "SNOW",
     ],
+    "Thematic ETFs (sector / AI)": [
+        "SMH", "SOXX", "IGV", "SKYY", "XLK", "VGT", "AIQ", "BOTZ",
+    ],
+    "Diversifiers (broad / international)": [
+        "VOO", "VTI", "IWM", "VXUS", "VEA", "VWO",
+    ],
     "Benchmarks": ["SPY", "QQQ", "VWRA.L", "^GSPC"],
 }
 # Show every group by default (all tickers are cached, so first load is fast).
@@ -75,6 +81,22 @@ DESCRIPTIONS: dict[str, str] = {
     "ADBE": "Adobe — creative software with Firefly generative AI.",
     "ORCL": "Oracle — databases and fast-growing AI/OCI cloud capacity.",
     "SNOW": "Snowflake — cloud data platform powering AI/ML workloads.",
+    # Thematic ETFs
+    "SMH": "VanEck Semiconductor ETF — top chipmakers (NVDA, TSM, AVGO).",
+    "SOXX": "iShares Semiconductor ETF — broad US semiconductor basket.",
+    "IGV": "iShares Expanded Tech-Software ETF — enterprise/cloud software.",
+    "SKYY": "First Trust Cloud Computing ETF — cloud infrastructure & SaaS.",
+    "XLK": "Technology Select Sector SPDR — large-cap US tech.",
+    "VGT": "Vanguard Information Technology ETF — broad US tech sector.",
+    "AIQ": "Global X Artificial Intelligence & Technology ETF.",
+    "BOTZ": "Global X Robotics & Artificial Intelligence ETF.",
+    # Diversifiers
+    "VOO": "Vanguard S&P 500 ETF — low-fee S&P 500 exposure.",
+    "VTI": "Vanguard Total Stock Market ETF — the entire US market.",
+    "IWM": "iShares Russell 2000 ETF — US small-cap benchmark.",
+    "VXUS": "Vanguard Total International Stock ETF — global ex-US equities.",
+    "VEA": "Vanguard FTSE Developed Markets ETF — developed markets ex-US.",
+    "VWO": "Vanguard FTSE Emerging Markets ETF — emerging-market equities.",
     # Benchmarks
     "SPY": "SPDR S&P 500 ETF — broad US large-cap benchmark.",
     "QQQ": "Invesco QQQ — Nasdaq-100, tech-heavy benchmark.",
